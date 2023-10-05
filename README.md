@@ -22,7 +22,7 @@ The automation script effectively removed the need for manual intervention in th
 One of the main challenges in this project was managing dependencies and packages in Python. However, this also served as a valuable learning experience in managing different Python environments and versions. The secure storage of credentials and the effective handling of errors and exceptions were important aspects of creating a robust and reliable automation process.
 
 ## Future Improvements
-While this project achieved the primary objective, there are potential areas for improvement and expansion. For instance, including a report processing step to perform tasks like data formatting or extraction could be beneficial. Additionally, incorporating logging or notification features would enhance the monitoring and troubleshooting process.
+While this project achieved the primary objective, there are potential areas for improvement and expansion. The additional check to verify the downloaded report is from the last 24 hours is due to issues where the 3rd party client that has scripts in place to place the report here to be downloaded has had issues preventing a new report from being available. A possible improvement to this could be to write in a fallback measure to access the site directly, create a user session and then access the report URL directly and handle the received file. 
 
 ## Impact
 This automation solution has significantly streamlined the process of report retrieval and distribution. By replacing the manual, repetitive task, we have seen improved efficiency and reduced human error, freeing up valuable time for staff to engage in more critical tasks.
